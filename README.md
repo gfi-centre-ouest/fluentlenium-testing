@@ -1,5 +1,6 @@
 # fluentlenium-testing
-Squelette de projet FluentLenium pour les tests sur IHM
+Squelette de projet [FluentLenium](https://fluentlenium.com/) + [Database Rider](https://database-rider.github.io/database-rider/)
+pour tests sur IHM avec contrôle de base de données.
 
 ## Prérequis
 
@@ -16,6 +17,12 @@ navigateur. Pour Chrome, les drivers sont disponibles sur la page [ChromeDriver 
 
 - Les tests peuvent être lancés comme n'importe quels tests JUnit, via Eclipse, IntelliJ IDEA ou en ligne de commande
 maven.
+
+- Pour lancer les tests sous Eclipse, il est nécessaire d'ajouter l'option de JVM suivante:
+
+```
+-Dwebdriver.chrome.driver=drivers/chromedriver.exe
+```
 
 ```
 mvn test
